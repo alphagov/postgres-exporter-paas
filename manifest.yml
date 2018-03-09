@@ -7,3 +7,4 @@ applications:
   buildpack: binary_buildpack
   services:
     - rails-postgres
+    - my-prom
