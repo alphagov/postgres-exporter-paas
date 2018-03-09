@@ -1,0 +1,9 @@
+---
+applications:
+- name: postgres-exporter-paas
+  memory: 64M
+  instances: 1
+  command: ./setup && ./run
+  buildpack: binary_buildpack
+  services:
+    - rails-postgres

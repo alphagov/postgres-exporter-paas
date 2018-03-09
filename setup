@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wget https://github.com/wrouesnel/postgres_exporter/releases/download/v0.4.4/postgres_exporter_v0.4.4_linux-amd64.tar.gz
+tar xvfz postgres_exporter_v0.4.4_linux-amd64.tar.gz
+mv postgres_exporter_v0.4.4_linux-amd64/postgres_exporter postgres_exporter
+rm -r postgres_exporter_v0.4.4_linux-amd64
+rm postgres_exporter_v0.4.4_linux-amd64.tar.gz

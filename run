@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export DATA_SOURCE_NAME=$DATABASE_URL
+
+./postgres_exporter \
+  --web.listen-address=":$PORT" \
+  --extend.query-path=queries.yml

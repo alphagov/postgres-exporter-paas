@@ -1,0 +1,13 @@
+tweets:
+  query: "select count(1) as total from microposts"
+  metrics:
+    - total:
+        usage: "GAUGE"
+        description: "The total number of tweets in the database."
+
+users:
+  query: "select count(1) as total from users"
+  metrics:
+    - total:
+        usage: "GAUGE"
+        description: "The total number of users in the database."
