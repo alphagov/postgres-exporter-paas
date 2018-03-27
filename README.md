@@ -21,3 +21,13 @@ diagnose problems and understand how their backing databases cope with traffic.
 7. Select your exporter's name from the dropdown menu (top-left of the screen)
 
 It can take up to 5 minutes for your exporter to appear in the dropdown menu.
+
+## Custom Queries
+
+**This step is optional.**
+
+This exporter supports custom queries. This lets you periodically run a query
+against the database and export it as a metric that can be graphed. For example,
+you might want to graph how many users are signed up to your service. Check
+out the `queries.yml` file for some examples. After editing this file, run
+`cf push` to deploy your changes.
